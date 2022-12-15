@@ -51,7 +51,7 @@ The [CRISPDM](https://www.datascience-pm.com/crisp-dm-2/) data science process w
 
 ### Best Metric
 
-Because classes in this dataset are imbalanced, accuracty was not used at a metric. An accuracy score would have the potential to be high and misleading. Insterad, the precision/recall score and F1 score were considered.
+Because classes in this dataset are imbalanced, accuracty was not used at a metric. An accuracy score would have the potential to be high and misleading. Insterad, the **recall score and F1 score were considered**.
 
 In statistics, a type I error is a false-positive result, meaning that a null hypothesis is rejected when it is actually true. A type II error is a false-negative result, meaning that a null hypothesis is not rejected when it is actually false.
 
@@ -73,11 +73,22 @@ The following models were built and evaluated for recall:
 
 ### Visualizing Results of the Model using SHAP
 
-SHAPley Additive exPlanations is a tool that creates visualizations for a machine learning model. The resource I used to fit SHAP to my data can be found HERE.
+SHAPley Additive exPlanations is a tool that creates visualizations for a machine learning model. The resource I used to fit SHAP to my data can be found [HERE](https://towardsdatascience.com/explain-any-models-with-the-shap-values-use-the-kernelexplainer-79de9464897a).
 
 On the right side of the graph below, the legend indicates that RED is HIGH feature value and BLUE is LOW feature value. On the y axis, the features are divided individually. The x axis ranks how significant the impact is.
 
 ### Findings and Reccomendation
+The following features are the highest contributors or risk:
+* Income
+* Age
+* Years of experience at current employment
+* Years spent in current residence
+* Profession
+
+The following features are the lowest contributors of risk:
+* Marital status
+* Home ownership status
+* Car ownership status
 
 # Get random sample of data
 df = df.sample(frac=1)
