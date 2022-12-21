@@ -80,12 +80,13 @@ The following models were built and evaluated for recall:
 SHAPley Additive exPlanations is a tool that creates visualizations for a machine learning model. The resource I used to fit SHAP to my data can be found [HERE](https://towardsdatascience.com/explain-any-models-with-the-shap-values-use-the-kernelexplainer-79de9464897a).
 
 On the right side of the graph below, the legend indicates that RED is HIGH feature value and BLUE is LOW feature value. On the y axis, the features are divided individually. The x axis ranks how significant the impact is.
-![](Loan_Eligibility_Prediction/images/8733F4A3-4F88-4BF5-8357-140B4B62D195_4_5005_c.jpeg)
+![](images/SHAP_summary.jpeg)
+![](images/SHAP_bar_plot.jpeg)
 
 ### Findings and Reccomendation
 
-![](Loan_Eligibility_Prediction/images/96E00E73-585F-4F3A-8CCE-71151F39032F_4_5005_c.jpeg)
-![](Loan_Eligibility_Prediction/images/515C315D-1B8A-4869-BA29-5E6FB9BA1D64_4_5005_c.jpeg)
+![](images/risk_flag_top.jpeg)
+![](images/risk_flag_btm.jpeg)
 The following features are the highest contributors or risk:
 * Income
 * Age
